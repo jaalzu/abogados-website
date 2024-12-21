@@ -1,9 +1,13 @@
-// 2. Tipografías
-$font-family-primary: 'Libre Baskerville', serif;
-$font-family-secondary: 'Lato', sans-serif;
 
 
-$font-weight-regular: 400; /* Regular */
-$font-weight-medium: 500; /* Medium */
-$font-weight-semibold: 600; /* semibold */
-$font-weight-bold: 700; /* bold */
+h1,h2,h3,h4,h5{
+    font-family: $font-family-primary;
+}
+
+p,span,a,button{
+    font-family: $font-family-secondary;
+}
+
+p{
+    @include font-style($font-size-base,$black-color,$font-weight-regular)
+}

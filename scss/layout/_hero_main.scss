@@ -1,0 +1,37 @@
+    .hero{
+        z-index: 2;
+        position: relative;
+        color: $white-color;
+        text-align: center;
+        padding-inline: 7px;
+        padding-top: 8rem;
+        h1{
+            @include font-style($font-size-h1,$white-color,$font-weight-medium);
+            margin-bottom: 2.5rem;
+        }
+        span{
+            display: block;
+            @include font-style($font-size-span,$white-color,$font-weight-regular);
+            margin-bottom: 1.8rem;
+        }
+    }
+
+
+    @include respond-to(tablet){
+        .hero{
+            h1{
+                font-size: $font-size-h1-tablet;
+            }
+        }
+    }
+
+@include respond-to(desktop){
+    .hero{
+        h1{
+            font-size: $font-size-h1-desktop;
+        }
+        span{
+            font-size: $font-size-span-desktop;
+        }
+    }
+}

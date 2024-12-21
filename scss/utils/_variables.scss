@@ -10,29 +10,46 @@ $white-color: #FAFAFA; // Gris claro para fondos
 $grey-color: #504C47; // Color principal para textos
 $black-light-text:#222731;
 
+// 2. Tipografías
+$font-family-primary: 'Libre Baskerville', serif;
+$font-family-secondary: 'Lato', sans-serif;
 
-// 3. Tamaños de Fuente mobile
+// Font weights
+$font-weight-regular: 400; /* Regular */
+$font-weight-medium: 500; /* Medium */
+$font-weight-semibold: 600; /* semibold */
+$font-weight-bold: 700; /* bold */
+
+// 3. Tamaños de letra mobile
 $font-size-base: 1rem; // Tamaño base
 $font-size-large: 1.2rem; 
 
-$font-size-h1: 2.375rem;
-$font-size-h2: 1.5625rem;
+$font-size-h1: 2.675rem;
+$font-size-h2: 1.4625rem;
 $font-size-h2-secondary: 1.25rem;
 $font-size-h3: 1.875rem;
 $font-size-h4: 1.375rem;
-
-$font-size-span:1.1875rem;
+$font-size-span:1.1575rem;
 $font-size-span-secondary:0.9375rem;
-
 $font-size-button:0.875rem;
-
 $font-size-links:1.375rem;
 $font-size-links-footer:1.6875rem;
 
+//  Tamaños de letra desktop
+$font-size-h1-desktop:4.2875rem;
+$font-size-span-desktop:1.425rem;
+
+
+// Tamaños de letra tablet
+$font-size-h1-tablet:3.48125rem;
+
 
 // 4. Espaciado mobile
-$padding-inline: 15px; 
-$padding-top:33px;
+$padding-inline-mobile: 15px;
+$padding-top-mobile:33px;
+// 4. Espaciado desktop
+$padding-inline-: 119px; 
+$padding-inline-desktop:119px;
 $padding-top:74px;
 
 

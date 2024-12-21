@@ -1,0 +1,117 @@
+#nav{
+    position: fixed;
+    border-bottom: 1px solid $grey-color;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index:10;
+
+    // NAV TOP 
+
+    .nav__top{
+        display: none;
+    }
+
+    .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo{
+                display: flex;
+                justify-content: center;
+                margin-left: 1.5rem;
+            }
+
+            .menu{
+                position: absolute;
+                top: 100%;
+                background-color: $grey-color;
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                
+
+                li {
+                    height: 100%;
+                    width: 100%;
+                    text-align: center;
+                    padding-block: 1.5rem;
+
+                    &:hover{
+                        background-color: $primary-color
+                    }
+                    
+                        a{
+                            @include font-style($font-size-links,$white-color,$font-weight-regular);
+                        }
+                }
+            }
+
+            .show-menu{
+                display: flex;
+            }
+
+            .nav__icons i{
+                font-size: 2.2rem;
+                margin-right: 1.5rem;
+                color: $white-color;
+            }
+        }
+}
+
+
+@include respond-to(desktop){
+    #nav{
+        height: 127px;
+        
+        .nav__top{
+            display: flex;
+            align-items: center;
+            padding: .5rem;
+            justify-content: space-between;
+            border-bottom: 1px solid $grey-color;
+            .nav-top-text{
+                margin-inline: 2rem;
+                @include font-style(15px,$white-color,$font-weight-regular)
+            }
+        }
+
+        .navbar{
+            margin-top: .4rem;
+            padding-inline: $padding-inline-desktop;
+
+            .menu{
+                position: static;
+                width: initial;
+                display: flex;
+                background-color: transparent;
+                flex-direction: row;
+                gap: 3rem;
+
+                li{
+                    padding-block: 0;
+
+                    &:hover{
+                        background-color: transparent;
+                    }
+
+                    a{
+                        transition: .3s ease;
+                        &:hover{
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+
+            .nav__icons{
+                display: none;
+            }
+        }
+    }
+}
