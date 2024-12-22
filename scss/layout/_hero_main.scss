@@ -5,14 +5,17 @@
         text-align: center;
         padding-inline: 7px;
         padding-top: 8rem;
+        letter-spacing: .5px;
+
         h1{
-            @include font-style($font-size-h1,$white-color,$font-weight-medium);
+            @include font-style($font-size-h1,$white-color,$font-weight-semibold);
             margin-bottom: 2.5rem;
+
         }
         span{
             display: block;
             @include font-style($font-size-span,$white-color,$font-weight-regular);
-            margin-bottom: 1.8rem;
+            margin-bottom: 1.9rem;
         }
     }
 

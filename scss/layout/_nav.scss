@@ -1,6 +1,7 @@
 #nav{
     position: fixed;
     border-bottom: 1px solid $grey-color;
+
     width: 100%;
     height: 90px;
     display: flex;
@@ -30,17 +31,23 @@
                 position: absolute;
                 top: 100%;
                 background-color: $grey-color;
-                display: none;
+                transform: translateY(-500px);
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
-                
+                transition: transform 0.3s ease-in-out;
+                overflow: hidden;
 
                 li {
+                    border-bottom: 1px solid rgba(230, 230, 230, 0.438);
                     height: 100%;
                     width: 100%;
                     text-align: center;
                     padding-block: 1.5rem;
+                    
+                    &:nth-child(1){
+                        border-top: 1px solid rgba(230, 230, 230, 0.438);
+                    }
 
                     &:hover{
                         background-color: $primary-color
@@ -53,7 +60,8 @@
             }
 
             .show-menu{
-                display: flex;
+
+                transform: translateY(0);
             }
 
             .nav__icons i{
@@ -90,12 +98,17 @@
                 width: initial;
                 display: flex;
                 background-color: transparent;
+                transform: translateY(0);
                 flex-direction: row;
                 gap: 3rem;
 
                 li{
                     padding-block: 0;
+                    border-bottom: none;
 
+                    &:nth-child(1){
+                        border-top: none;
+                    }
                     &:hover{
                         background-color: transparent;
                     }
