@@ -9,5 +9,31 @@ p,span,a,button{
 }
 
 p{
-    @include font-style($font-size-base,$black-color,$font-weight-regular)
+    // @include font-style($font-size-base,$black-color,$font-weight-regular);
+    font-size: clamp(1.130rem,5vw,1.230rem);
+    line-height:1.4;
 }
+
+
+h2{
+    font-size: clamp(1.830rem,5vw,2rem);
+}
+
+// @include respond-to(tablet){
+//     p{
+//         font-size: $font-size-base-tablet !important;
+//     }
+
+//     h2{
+//         font-size: $font-size-h2-tablet !important;
+//     }
+// }
+
+// @include respond-to(desktop){
+//     p{
+//         font-size: $font-size-base-desktop !important;
+//     }
+//     h2{
+//         font-size: $font-size-h2-desktop !important;
+//     }
+// }

@@ -21,7 +21,7 @@ $font-weight-semibold: 600; /* semibold */
 $font-weight-bold: 700; /* bold */
 
 // 3. Tamaños de letra mobile
-$font-size-base: 1rem; // Tamaño base
+$font-size-base: 1.130rem; // Tamaño base
 $font-size-large: 1.2rem; 
 
 $font-size-h1: 2.675rem;
@@ -37,20 +37,27 @@ $font-size-links-footer:1.6875rem;
 
 //  Tamaños de letra desktop
 $font-size-h1-desktop:4.2875rem;
+$font-size-h2-desktop:2.2rem;
 $font-size-span-desktop:1.425rem;
+$font-size-base-desktop: 1.150rem; // Tamaño base
 
 
-// Tamaños de letra tablet
+
+// Tamaños de letra tablet //
 $font-size-h1-tablet:3.48125rem;
+$font-size-h2-tablet:1.8625rem;
+$font-size-base-tablet: 1.180rem; // Tamaño base
 
 
-// 4. Espaciado mobile
+// 4. Espaciado mobile//
 $padding-inline-mobile: 15px;
-$padding-top-mobile:33px;
+$padding-block-mobile:33px;
+
 // 4. Espaciado desktop
 $padding-inline-: 119px; 
 $padding-inline-desktop:119px;
-$padding-top:74px;
+$padding-block-desktop:74px;
+
 
 
 

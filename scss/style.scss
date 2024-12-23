@@ -6,12 +6,12 @@
 
 @import '../scss/components/buttons';
 @import '../scss/components/lines';
+@import '../scss/components/container';
 
 @import '../scss/layout/nav';
 @import '../scss/layout/header';
 @import '../scss/layout/hero_main';
 @import '../scss/layout/footer';
 
-@import '../scss/layout/header';
-@import '../scss/layout/nav';
-@import '../scss/layout/hero_main';
+
+@import '../scss/sections/intro.scss';
