@@ -49,15 +49,16 @@
         .intro{
             .intro__box{
                 flex-direction: row;
-                gap: 7rem;
-
+                gap: 5rem;
             }
             }
     }
     @include respond-to(large-desktop){
         .intro{
             .intro__box{
-                max-width: 1400px;
+                max-width: 1300px;
+                gap: 9rem;
+
             }
             }
     }

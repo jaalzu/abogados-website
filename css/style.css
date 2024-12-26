@@ -13,14 +13,23 @@
 }
 
 section {
-  padding: 40px 7%;
+  padding: 25px 4% 70px;
+  height: auto;
+  width: 100%;
 }
 
 @media (min-width: 1025px) {
   section {
-    padding: 70px 7%;
+    padding: 60px 9% 120px;
   }
 }
+img {
+  width: 100%;
+  border-radius: 2px;
+  object-fit: cover;
+  height: 100%;
+}
+
 body {
   background-color: black;
 }
@@ -40,26 +49,48 @@ p {
 
 h2 {
   font-size: clamp(1.83rem, 5vw, 2rem);
+  line-height: 1.3 !important;
+}
+
+.span__title {
+  color: #F1B164;
+  font-family: "Libre Baskerville", serif;
+  padding-bottom: 2rem;
+}
+
+.section__title {
+  text-align: center;
+  font-size: 28px;
+  color: #FAFAFA;
+  font-weight: 400;
+  padding-top: 60px;
+  padding-bottom: 50px;
 }
 
 .btn__primary {
   border: none;
   outline: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 14rem;
   height: 2.55rem;
-  border-radius: 3px;
+  border-radius: 2px;
   padding: 0.5rem 1rem;
   background-color: #F1B164;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  font-size: 16.5px;
+  font-size: 15.5px;
   color: #000000;
-  font-weight: 500;
+  font-weight: 400;
 }
 .btn__primary:hover {
   background-color: rgb(236.775147929, 153.4615384615, 53.224852071); /* Oscurecer al pasar */
+}
+.btn__primary.secondary {
+  width: 8.5rem;
+  border-radius: 4px;
 }
 
 #nav {
@@ -275,12 +306,116 @@ header::before {
 @media (min-width: 1025px) {
   .intro .intro__box {
     flex-direction: row;
-    gap: 7rem;
+    gap: 5rem;
   }
 }
 @media (min-width: 1440px) {
   .intro .intro__box {
-    max-width: 1400px;
+    max-width: 1300px;
+    gap: 9rem;
+  }
+}
+#services {
+  background-color: #272d39;
+  overflow: hidden;
+  padding-inline: 1rem;
+}
+#services .services__flex {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#services .services__flex .services__intro {
+  gap: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+#services .services__flex .services__intro .services__text p {
+  line-height: 1.6;
+  padding-bottom: 2.8rem;
+  font-size: 20px;
+  color: #FAFAFA;
+  font-weight: 400;
+}
+#services .services__grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  column-gap: 1rem;
+  row-gap: 2rem;
+}
+#services .services__grid .services__card {
+  min-width: 278px;
+  max-width: 325px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: 0 0 0 0.5px #FAFAFA;
+  padding: 10px 10px 30px;
+}
+#services .services__grid .services__card .card__img img {
+  min-width: 15rem;
+  max-width: 20rem;
+  height: 198px;
+}
+#services .services__grid .services__card .card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-inline: 10px;
+  padding-top: 16px;
+}
+#services .services__grid .services__card .card__description span {
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: #F1B164;
+  font-weight: 400;
+}
+#services .services__grid .services__card .card__description p {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  color: #FAFAFA;
+  font-weight: 400;
+}
+
+@media (min-width: 668px) and (max-width: 1024px) {
+  #services .services__flex .services__intro .services__img img {
+    width: 100%;
+    height: 300px;
+  }
+  #services .services__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1025px) {
+  #services .services__flex {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  #services .services__flex .services__intro {
+    gap: 5rem;
+    flex-direction: row;
+  }
+  #services .services__flex .services__intro .services__img img {
+    width: 400px;
+    height: 500px;
+  }
+  #services .services__flex .services__intro .services__text p {
+    font-size: 30px;
+  }
+  #services .services__grid {
+    max-width: 1300px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+@media (min-width: 1440px) {
+  #services .services__flex .services__intro .services__img img {
+    width: 600px;
+    height: 500px;
   }
 }
 

@@ -1,20 +1,29 @@
 .btn__primary{
     border: none;
     outline: none;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 14rem;
     height: 2.55rem;
-    border-radius: 3px;
+
+    border-radius: 2px;
     padding: 0.5rem 1rem;
     background-color: $primary-color;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
     cursor: pointer;
-    @include font-style(16.5px,$black-color,$font-weight-medium);
+    @include font-style(15.5px,$black-color,$font-weight-regular);
 
     &:hover{
         background-color: darken($primary-color, 10%); /* Oscurecer al pasar */
     }
 
+
+    &.secondary{
+        width: 8.5rem;
+    border-radius: 4px;
+
+    }
 }

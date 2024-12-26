@@ -17,23 +17,18 @@ p{
 
 h2{
     font-size: clamp(1.830rem,5vw,2rem);
+    line-height: 1.3 !important;
 }
 
-// @include respond-to(tablet){
-//     p{
-//         font-size: $font-size-base-tablet !important;
-//     }
+.span__title{
+    color: $primary-color;
+    font-family: $font-family-primary;
+    padding-bottom: 2rem;
+}
 
-//     h2{
-//         font-size: $font-size-h2-tablet !important;
-//     }
-// }
-
-// @include respond-to(desktop){
-//     p{
-//         font-size: $font-size-base-desktop !important;
-//     }
-//     h2{
-//         font-size: $font-size-h2-desktop !important;
-//     }
-// }
+.section__title{
+    text-align: center;
+    @include font-style(28px,$white-color,$font-weight-regular);
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
