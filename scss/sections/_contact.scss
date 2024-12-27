@@ -1,0 +1,85 @@
+.contact{
+    background-color: $white-color;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .contact__title{
+        text-align: center;
+        font-size: 1.2rem;
+        text-decoration: underline 2px $primary-color;
+        text-underline-offset: 5px;
+        margin-bottom: 1rem;
+        font-weight: $font-weight-semibold;
+    }
+
+    .contact__text{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4rem;
+        font-weight: $font-weight-medium;
+            p{
+                font-size: clamp(1.4rem,4vw,1.7rem);
+                max-width: 90%;
+            }
+    }
+    .contact__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4.5rem;
+        .value__box{
+            display: flex;
+            gap: 1rem;
+                h5{
+                    font-size: .9rem;
+                font-weight: $font-weight-regular;
+            }
+
+            .icon__box{
+                background-color: $primary-color;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 64px;
+                height: 61px;
+                padding: 1rem;
+                border-radius: 50%;
+
+                i{
+                    color: $black-color;
+                    font-size: 1.8rem;
+                }
+            }
+
+            .value__text{
+                display: flex;
+                flex-direction: column;
+                gap: .6rem;
+
+                p{
+                    font-size: 1.1rem;
+                    font-weight: $font-weight-semibold;
+                }
+            }
+        }
+    }
+}
+
+
+@include respond-to(desktop){
+    .contact{
+       .contact__text{
+        p{
+            max-width: 50%;
+        }
+       }
+
+       .contact__grid{
+        grid-template-columns: repeat(3,1fr);
+       }
+    }
+}
