@@ -1,3 +1,85 @@
 .aboutus{
-    background-color: rebeccapurple;
+    background-color: $white-color;
+    padding-top: 3rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background-image: url(/public/images/bg-image.about.webp);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    // background-attachment: fixed;
+    background-size: 260px 440px; 
+
+
+    .about__flex{
+        h3{
+            position: relative;
+            font-size: clamp(2rem,5vw,2.1rem);
+            margin-bottom: 4rem;
+            max-width: 70%;
+
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -30px;
+                left: 0;
+                background-color: $primary-color;
+                height: 2px;
+                width: 8.125rem;
+            }
+        }
+        p{
+            margin-bottom: 2.8rem;
+            line-height: 1.5;
+        }
+    }
+
+    .about__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+
+        .about__box{
+            padding: .5rem;
+
+            span{
+                @include font-style(3rem,$primary-color,$font-weight-bold)
+            }
+            p{
+                font-weight: $font-weight-semibold;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+
+@include respond-to(desktop){
+    .aboutus{
+        
+    background-size: 320px 500px; 
+
+        .about__flex{
+            h3{
+                max-width: 100%;
+            }
+            p{
+                max-width: 70%;
+            }
+        }
+
+        .about__grid{
+            
+            grid-template-columns: repeat(3,1fr);
+            max-width: 1200px;
+            gap: 1rem;
+            text-align: start;
+
+            .about__box{
+                padding: 0;
+            }
+        }
+    }
 }
