@@ -21,6 +21,9 @@
 
 
 
+
+
+
   @mixin respond-to($breakpoint) {
     @if $breakpoint == mobile {
       @media (max-width: 667px) { // Máximo para móviles
