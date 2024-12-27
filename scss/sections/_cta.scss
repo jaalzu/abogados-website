@@ -1,0 +1,44 @@
+.cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/public/images/ctaSection/cta-img.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+    padding-top: 2rem;
+    position: relative;
+    padding-bottom: 4rem;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.45);
+        z-index: 1;       
+        }
+
+        .cta__flex{
+            z-index: 5;
+
+            
+            h3{
+                font-size: clamp(1.6rem,5vw,2rem);
+                color: $white-color;
+                margin-bottom: 2.5rem;
+                font-weight: $font-weight-bold;
+            }
+        }
+}
+
+
+@include respond-to(desktop){
+    .cta{
+        padding-top: 4rem;
+        background-position: center;
+    }
+}

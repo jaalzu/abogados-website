@@ -10,6 +10,7 @@
     background-position: bottom right;
     // background-attachment: fixed;
     background-size: 260px 440px; 
+    padding-bottom: 10rem;
 
 
     .about__flex{
@@ -38,7 +39,7 @@
     .about__grid{
         display: grid;
         grid-template-columns: 1fr;
-        gap: 2.5rem;
+        gap: 3rem;
         text-align: center;
 
         .about__box{
@@ -58,7 +59,6 @@
 
 @include respond-to(desktop){
     .aboutus{
-        
     background-size: 320px 500px; 
 
         .about__flex{
@@ -71,7 +71,6 @@
         }
 
         .about__grid{
-            
             grid-template-columns: repeat(3,1fr);
             max-width: 1200px;
             gap: 1rem;
