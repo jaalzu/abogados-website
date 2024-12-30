@@ -139,6 +139,8 @@
     }
 }
 
+
+
 @include respond-to(large-desktop){
     #services{
         .services__flex{
@@ -151,6 +153,79 @@
                 }
             }
             
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+////////// services page scss start here ///////////////////////////
+
+.services__info{
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline: $padding-inline-mobile;
+    gap: 2rem;
+    padding-top: 3rem;    
+
+    .services__intro{
+        position: relative;
+        margin-bottom: 3rem;
+
+        h2{
+            @include font-style(24px,$white-color,$font-weight-regular);
+            font-family: $font-family-secondary;
+            line-height: 1.5 !important;
+        }
+
+        &::after{
+            position: absolute;
+            content: '';
+            width: 45%;
+            bottom: -20%;
+            left: 0;
+            background-color: $primary-color;
+            height: 1px;
+        }
+    }
+
+    .services__list{
+        span{
+            font-size: 1.4rem;
+            color:$white-color;
+            font-weight: $font-weight-medium;
+            opacity: .9;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-top: 3rem;
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                color: $white-color;
+                i{
+                    color: $primary-color;
+                    font-size: .5rem;
+                }
+
+                p{
+                    font-size: 1.3rem;
+                }
+            }
         }
     }
 }

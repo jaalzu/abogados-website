@@ -20,6 +20,7 @@
             justify-content: space-between;
             align-items: center;
 
+
             .logo{
                 display: flex;
                 justify-content: center;
@@ -35,7 +36,6 @@
                 align-items: center;
                 width: 100%;
                 transition: transform 0.3s ease-in-out;
-                overflow: hidden;
 
                 li {
                     border-bottom: 1px solid rgba(230, 230, 230, 0.438);
@@ -55,7 +55,48 @@
                         a{
                             @include font-style($font-size-links,$white-color,$font-weight-regular);
                         }
-                }
+                     }
+
+
+                     .services{
+                         transition: .2s ease;
+                         position: relative;
+                         a{
+                                align-items: center;
+                                justify-content: center;
+                                display: flex;
+                                margin-left: .7rem;
+                                gap: .5rem;
+                              
+                                i{
+                                    font-size: .9rem;
+                            }
+                        }
+                        
+                        .submenu{
+                            position: absolute;
+                            background-color: $primary-color;
+                            margin-top: 1.7rem;
+                            width: 160px;
+                            transition: opacity 0.3s ease, visibility 0.3s ease;
+                            li a{
+                                color: $secondary-color;
+                                margin-block: 1rem;
+                                font-size: 1.090rem;
+                                
+                                &:hover{
+                                    color: $white-color;
+                                }
+                            }
+                            
+                            
+                            
+                        }
+                        
+                    }
+
+
+
             }
 
             .show-menu{
@@ -69,6 +110,7 @@
             }
         }
 }
+
 
 
 @include respond-to(desktop){

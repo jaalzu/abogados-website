@@ -16,7 +16,7 @@
 </head>
 <body>
     <header id="header" class="header" role="banner">
-
+0
         <nav id="nav" role="navigation" >
             <div class="nav__top">
                 <p class="nav-top-text">Lun a Vie de 08:00 a 20:30. Sabado de 08:00 a 17:00. Consultas 24hs </p>
@@ -27,7 +27,15 @@
                 <div class="logo"><a href=""><img src="/public/images/logo/logo-desktop.png" alt="imagen de fondo del hero" id="logo-desktop"></a></div>
                 <div class="menu" id="menu">
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="./pages/servicios.html">Servicios</a></li>
+                    <li class="services">
+                        <a class="services__link" href="./pages/servicios.html">Servicios <i class="fa-solid fa-chevron-down"></i> </a> 
+                        <ul class="submenu">
+                            <li><a href="#">Derecho Civil</a></li>
+                            <li><a href="#">Derecho Laboral</a></li>
+                            <li><a href="#">Derecho Penal</a></li>
+                            <li><a href="#">Derecho Familia</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Nosotros</a></li>
                     <li><a href="#">Contacto</a></li>
                 </div>
