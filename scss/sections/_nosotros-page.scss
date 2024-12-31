@@ -1,5 +1,184 @@
-#nosotros{
+.nosotros{
+    background-color:$secondary-color;
+
     .nosotros__intro{
-        background-color: rebeccapurple;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        align-items: flex-start;
+        padding-top: 1rem;
+
+        .nosotros__description{
+            color: $white-color;
+            h2{
+                padding-top: 2rem;
+                padding-bottom: 5rem;
+                position: relative;
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 15%;
+                    left: 0;
+                    height: 1px;
+                    background-color: $primary-color;
+                    width: 35%;
+                }
+            }
+
+            p{
+                line-height: 1.6;
+                padding-top: 1.5rem;
+                opacity: .9;
+            }
+        }
+
+        .nosotros__img{
+            width: 100%;
+            height: 100%;
+        }
     }    
+}
+
+
+
+.lawyer{
+    background-color: $white-color;
+    padding-top: 3rem;
+    .lawyer__flex{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+
+        .lawyer__description{
+            h3{
+                font-size: clamp(1.7rem,5vw,2rem);
+                margin-bottom: 4rem;
+                position: relative;
+                font-weight: $font-weight-semibold;
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: -30%;
+                    left: 0;
+                    height: 1px;
+                    background-color: $primary-color;
+                    width: 35%;
+                }
+            }
+
+            span{
+                font-weight: $font-weight-semibold;
+                font-size: clamp(1.3rem,5vw,1.5rem);
+            }
+
+            p{
+                padding-top: .5rem;
+                font-size: clamp(1.1050rem,5vw,1.2rem);
+                font-weight: $font-weight-medium;
+            }
+        }
+
+        .lawyer__img{
+            width: 100%;
+            height: 100%;
+            img{
+                border-radius: 6px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@include respond-to(tablet){
+    .nosotros{
+        .nosotros__intro{
+            .nosotros__img{
+                width: 600px;
+            }
+        }
+    }
+
+    .lawyer{
+        .lawyer__flex{
+            .lawyer__img{
+                img{
+                    width: 60%;
+                    height: 60%;
+                }
+            }
+        }
+    }
+}
+
+
+
+@include respond-to(desktop){
+    .nosotros{
+        .nosotros__intro{
+            flex-direction: row;
+
+            .nosotros__description{
+                h2{
+                    max-width: 80%;
+                }
+            }
+
+            .nosotros__img{
+                img{
+                    width: 300px;
+                    height: 500px;
+                }
+            }
+        }
+    }
+
+    .lawyer{
+        .lawyer__flex{
+            flex-direction: row-reverse;
+            max-width: 1400px;
+            gap: 6rem;
+            margin: 0 auto;
+
+            .lawyer__img{
+                img{
+                    width: 450px;
+                    height: 450px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@include respond-to(large-desktop){
+    .nosotros{
+        .nosotros__intro{
+            margin: 0 auto;
+            max-width: 1400px;
+            .nosotros__img{
+                img{
+                    width: 500px;
+                }
+            }
+        }
+    }
+
+
+    .lawyer{
+        .lawyer__flex{
+            .lawyer__description{
+                h3{
+                    max-width: 60%;
+                }
+            }
+        }
+    }
 }
