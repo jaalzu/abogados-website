@@ -178,9 +178,9 @@
     padding-top: 3rem;    
 
     .services__intro{
+        padding-bottom: 6rem;
         position: relative;
-        margin-bottom: 3rem;
-
+        
         h2{
             @include font-style(24px,$white-color,$font-weight-regular);
             font-family: $font-family-secondary;
@@ -191,7 +191,7 @@
             position: absolute;
             content: '';
             width: 45%;
-            bottom: -20%;
+            bottom: 20%;
             left: 0;
             background-color: $primary-color;
             height: 1px;
@@ -199,6 +199,7 @@
     }
 
     .services__list{
+        padding-bottom: 3rem;
         span{
             font-size: 1.4rem;
             color:$white-color;
@@ -228,4 +229,63 @@
             }
         }
     }
+
+
+        .services__img{
+            img{
+                max-width: 90%;
+            }
+        }
 }
+
+
+@include respond-to(tablet){
+    .services__info{
+        .services__img{
+            img{
+                max-width: 60%;
+            }
+        }
+    }
+}
+
+
+
+@include respond-to(desktop){
+    .services__info{
+        gap: 5rem;
+        padding-top: 7rem;
+
+        
+        .services__flexbox{
+            gap: 4rem;
+            display: flex;
+            flex-direction: row-reverse;
+            max-width: 1400px;
+            margin: 0 auto;
+            
+
+            .services__img{
+                width: 455px;
+                height: 543px;
+            }
+            
+        }
+        
+    }
+        
+    }
+
+
+    @include respond-to(large-desktop){
+        .services__info{
+            .services__flexbox{
+                h2{
+                    font-size: 28px;
+                }
+                .services__img{
+                    width: 652px;
+                }
+            }
+        }
+    }

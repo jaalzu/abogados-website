@@ -639,8 +639,8 @@ header::before {
   padding-top: 3rem;
 }
 .services__info .services__intro {
+  padding-bottom: 6rem;
   position: relative;
-  margin-bottom: 3rem;
 }
 .services__info .services__intro h2 {
   font-size: 24px;
@@ -653,10 +653,13 @@ header::before {
   position: absolute;
   content: "";
   width: 45%;
-  bottom: -20%;
+  bottom: 20%;
   left: 0;
   background-color: #F1B164;
   height: 1px;
+}
+.services__info .services__list {
+  padding-bottom: 3rem;
 }
 .services__info .services__list span {
   font-size: 1.4rem;
@@ -685,7 +688,40 @@ header::before {
 .services__info .services__list ul li p {
   font-size: 1.3rem;
 }
+.services__info .services__img img {
+  max-width: 90%;
+}
 
+@media (min-width: 668px) and (max-width: 1024px) {
+  .services__info .services__img img {
+    max-width: 60%;
+  }
+}
+@media (min-width: 1025px) {
+  .services__info {
+    gap: 5rem;
+    padding-top: 7rem;
+  }
+  .services__info .services__flexbox {
+    gap: 4rem;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .services__info .services__flexbox .services__img {
+    width: 455px;
+    height: 543px;
+  }
+}
+@media (min-width: 1440px) {
+  .services__info .services__flexbox h2 {
+    font-size: 28px;
+  }
+  .services__info .services__flexbox .services__img {
+    width: 652px;
+  }
+}
 .aboutus {
   background-color: #FAFAFA;
   padding-top: 3rem;
@@ -766,9 +802,9 @@ header::before {
   background-size: cover;
   background-position: bottom;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 3rem;
   position: relative;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
 }
 .cta::before {
   content: "";
