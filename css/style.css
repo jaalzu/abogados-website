@@ -981,5 +981,8 @@ header::before {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+#nosotros .nosotros__intro {
+  background-color: rebeccapurple;
+}
 
 /*# sourceMappingURL=style.css.map */
