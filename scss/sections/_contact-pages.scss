@@ -1,0 +1,92 @@
+.contact__page{
+    background-color: $white-color;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding-top: 3rem;
+
+    .contact__page__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 0 auto;
+        text-align: center;
+        padding-inline: 2.5rem;
+
+        .contact__box{
+            border: 1px solid rgb(150, 150, 150);
+            display: flex;
+            box-shadow: 0 6px 4px rgba(34, 34, 34, 0.1);
+            flex-direction: column;
+            padding-inline: .5rem;
+            gap: .5rem;
+            border-radius: 3px;
+            padding-bottom:2.3rem;
+            padding-top: 2rem;
+            .contact__icon{
+                    padding-bottom: .5rem;
+                    
+                i{
+                    padding: 1.2rem;
+                    font-size: 1.6rem;
+                    border-radius: 50%;
+                    background-color: $primary-color;
+                }
+            }
+                span{
+                    font-size: 1rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                    font-weight: $font-weight-semibold;
+                }
+        }
+    }
+    
+.contact__map{
+    iframe{
+        width: 100%;
+    }
+
+    .iframe__desktop{
+        display: none;
+    }
+
+    h5{
+        text-align: center;
+        font-size: 1.5rem;
+        padding-bottom: .8rem;
+    }
+}
+}
+
+
+@include respond-to(tablet){
+    .contact__page{
+        .contact__page__grid{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+
+
+@include respond-to(desktop){
+    .contact__page{
+        padding-top: 8rem;
+        .contact__page__grid{
+            grid-template-columns: repeat(4,1fr);
+            padding-inline: 0;
+            padding-bottom: 6rem;
+        }
+
+        .contact__map{
+            .iframe__desktop{
+                display: block;
+            }
+            .iframe__mobile{
+                display: none;
+            }
+        }
+    }
+}
