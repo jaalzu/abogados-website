@@ -8,6 +8,10 @@ p,span,a,button{
     font-family: $font-family-secondary;
 }
 
+a{
+    text-decoration: none !important;
+}
+
 p{
     // @include font-style($font-size-base,$black-color,$font-weight-regular);
     font-size: clamp(1.130rem,5vw,1.230rem);

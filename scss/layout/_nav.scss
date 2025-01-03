@@ -1,170 +1,87 @@
-#nav{
-    position: fixed;
-    border-bottom: 1px solid $grey-color;
-    width: 100%;
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    z-index:10;
-
-    // NAV TOP 
-
-    .nav__top{
-        display: none;
-    }
-
-    .navbar{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-
-            .logo{
-                display: flex;
-                justify-content: center;
-                margin-left: 1.5rem;
-            }
-
-            .menu{
-                position: absolute;
-                top: 100%;
-                background-color: $grey-color;
-                transform: translateY(-500px);
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-                transition: transform 0.3s ease-in-out;
-
-                li {
-                    border-bottom: 1px solid rgba(230, 230, 230, 0.438);
-                    height: 100%;
-                    width: 100%;
-                    text-align: center;
-                    padding-block: 1.5rem;
-                    
-                    &:nth-child(1){
-                        border-top: 1px solid rgba(230, 230, 230, 0.438);
-                    }
-
-                    &:hover{
-                        background-color: $primary-color
-                    }
-                    
-                        a{
-                            @include font-style($font-size-links,$white-color,$font-weight-regular);
-                        }
-                     }
-
-
-                     .services{
-                         transition: .2s ease;
-                         position: relative;
-                         a{
-                                align-items: center;
-                                justify-content: center;
-                                display: flex;
-                                margin-left: .7rem;
-                                gap: .5rem;
-                              
-                                i{
-                                    font-size: .9rem;
-                            }
-                        }
-                        
-                        .submenu{
-                            position: absolute;
-                            background-color: $primary-color;
-                            margin-top: 1.7rem;
-                            width: 160px;
-                            transition: opacity 0.3s ease, visibility 0.3s ease;
-                            li a{
-                                color: $secondary-color;
-                                margin-block: 1rem;
-                                font-size: 1.090rem;
-                                
-                                &:hover{
-                                    color: $white-color;
-                                }
-                            }
-                            
-                            
-                            
-                        }
-                        
-                    }
-
-
-
-            }
-
-            .show-menu{
-                transform: translateY(0);
-            }
-
-            .nav__icons i{
-                font-size: 2.2rem;
-                margin-right: 1.5rem;
-                color: $white-color;
-            }
-        }
+/* Estilos generales */
+.navbar {
+    background-color: $secondary-color;
 }
 
+.navbar-toggler-icon {
+    width: 45px;
+    height: 40px; 
+}
 
+/* Logo más pequeño */
+.navbar-brand img {
+    max-width: 65px; /* Tamaño del logo */
+    height: auto;
+}
 
-@include respond-to(desktop){
-    #nav{
-        height: 127px;
-        
-        .nav__top{
-            display: flex;
-            align-items: center;
-            padding: .5rem;
-            justify-content: space-between;
-            border-bottom: 1px solid $grey-color;
-            .nav-top-text{
-                margin-inline: 2rem;
-                @include font-style(15px,$white-color,$font-weight-regular)
-            }
-        }
+.navbar-nav .nav-link {
+    font-size: 1.3rem; 
+    padding: 0.8rem 1.5rem; 
+    color: $white-color;
+}
 
-        .navbar{
-            margin-top: .4rem;
-            padding-inline: $padding-inline-desktop;
+.navbar-nav .nav-link:hover {
+    background-color: #3a4454; 
+    color: $white-color;
+}
 
-            .menu{
-                position: static;
-                width: initial;
-                display: flex;
-                background-color: transparent;
-                transform: translateY(0);
-                flex-direction: row;
-                gap: 3rem;
+/* Estilos para el dropdown */
+.navbar-nav .dropdown-menu {
+    background-color: $secondary-color; /* Fondo del dropdown */
+    border: none;
+}
 
-                li{
-                    padding-block: 0;
-                    border-bottom: none;
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: $white-color; 
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+}
 
-                    &:nth-child(1){
-                        border-top: none;
-                    }
-                    &:hover{
-                        background-color: transparent;
-                    }
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #3a4454; 
+}
 
-                    a{
-                        transition: .3s ease;
-                        &:hover{
-                            color: $primary-color;
-                        }
-                    }
-                }
-            }
+/* Móvil: ajustes */
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-link {
+        font-size: 1.2rem; /* Tamaño de los links */
+        padding: 1rem 2rem; /* Más espacio entre los links */
+    }
 
-            .nav__icons{
-                display: none;
-            }
-        }
+    .navbar-nav .dropdown-menu {
+        background-color: #272d39; /* Color del fondo del dropdown */
+    }
+
+    /* Hacer visible el dropdown cuando se clickea */
+    .navbar-nav .dropdown.show .dropdown-menu {
+        display: block !important;
+    }
+}
+
+/* Escritorio: ajustes */
+@media (min-width: 992px) {
+
+    .navbar{
+        background-color: transparent;
+    }
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block; /* Mostrar el dropdown al pasar el mouse */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.3rem; 
+        margin-inline: .7rem;
+        padding: 0.8rem 1.5rem; 
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        padding: 1rem 0.5rem; /* Ajustar el tamaño de los elementos del dropdown */
     }
 }

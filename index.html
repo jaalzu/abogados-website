@@ -12,57 +12,63 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600&display=swap&subset=latin" rel="stylesheet">
     <!-- google fonts cdn end -->
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 
 </head>
 <body>
     <header id="header" class="header" role="banner">
-0
-        <nav id="nav" role="navigation" >
-            <div class="nav__top">
-                <p class="nav-top-text">Lun a Vie de 08:00 a 20:30. Sabado de 08:00 a 17:00. Consultas 24hs </p>
-                <p class="nav-top-text">Tel:3624337121</p>
+       
+        <nav class="navbar navbar-expand-lg navbar-dark bg-body-black fixed-top border-bottom border-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="/public/images/logo/f57b3067808d4c1b9b7715b5c0944fe8-free-removebg-preview.png" alt="Logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/pages/servicios-civil.html">Derecho Civil</a></li>
+                      <li><a class="dropdown-item" href="/pages/servicios-laboral.html">Derecho Laboral</a></li>
+                      <li><a class="dropdown-item" href="/pages/servicios-penal.html">Derecho Penal</a></li>
+                      <li><a class="dropdown-item" href="/pages/servicios-familia.html">Derecho de Familia</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-
-            <div class="navbar">
-                <div class="logo"><a href=""><img src="/public/images/logo/logo-desktop.png" alt="imagen de fondo del hero" id="logo-desktop"></a></div>
-                <div class="menu" id="menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li class="services">
-                        <a class="services__link" href="./pages/servicios-civil.html">Servicios <i class="fa-solid fa-chevron-down"></i> </a> 
-                        <ul class="submenu">
-                            <li><a href="#">Derecho Civil</a></li>
-                            <li><a href="#">Derecho Laboral</a></li>
-                            <li><a href="#">Derecho Penal</a></li>
-                            <li><a href="#">Derecho Familia</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </div>
-                <div class="nav__icons" id="nav-icons">
-                    <i  class="fa-solid fa-bars" id="menu-btn"></i>
-                </div>
-            </div>
-        </nav>
-
+          </nav>
+      
         <div class="hero">
-            <h1>Estudio Jurídico <br> Gonzalez</h1>
-            <span>defendemos tus derechos en todo momento</span>
-            <a href="#" class="btn__primary">Realizar consulta</a>
+          <h1>Estudio Jurídico <br> Gonzalez</h1>
+          <span>defendemos tus derechos en todo momento</span>
+          <a href="#" class="btn__primary">Realizar consulta</a>
         </div>
-    </header>
+      </header>
+      
 
     <section class="intro " id="intro">
         <div class="intro__box">
-
             <div class="intro__title">
                 <h2>Estudio juridico integral capacitado para resolver todos tus problemas legales.</h2>
             </div>
             <div class="intro__description">
                 <p>
-                    <p><span class="markup__intro">“</span>Mi compromiso es defender tus derechos con integridad y determinación, asegurándome de que tu voz sea escuchada y de que la justicia trabaje a tu favor, porque tus intereses son mi prioridad.<span class="markup__intro">”</span></p>
+                    <span class="markup__intro">“</span>Mi compromiso es defender tus derechos con integridad y determinación, asegurándome de que tu voz sea escuchada y de que la justicia trabaje a tu favor, porque tus intereses son mi prioridad.<span class="markup__intro">”</span>
                 </p>
-            </div>
             </div>
     </section>
 
@@ -75,48 +81,48 @@
             <div class="services__intro">
                 <div class="services__text">
                     <p>Ofrecemos asesoría en Derecho Civil, Derecho Penal, Derecho Laboral y Derecho Corporativo, brindando asesoria legal para resolver tus necesidades jurídicas con profesionalismo y eficacia.</p>
-                    <a href="#" class="btn__primary secondary">Servicios</a>
+                    <a href="#services__grid" class="btn__primary secondary">Servicios</a>
                 </div>
                 <div class="services__img">
-                    <img src="/public/images/services/services_header.webp" alt="">
+                    <img src="/public/images/services/services_header.webp" alt="servicios imagen de portada" loading="lazy">
                 </div>
             </div>
         </div>
 
-        <h3 class="section__title">Servicios Jurídicos <br> Integrales</h3>
-        <div class="services__grid">
+        <h2 class="section__title">Servicios Jurídicos <br> Integrales</h2>
+        <div class="services__grid" id="services__grid">
             <div class="services__card">
-                <div class="card__img"><img src="/public/images/services/derecho-civil.webp" alt=""></div>
+                <div class="card__img"><img src="/public/images/services/derecho-civil.webp" alt="servicio derecho civil" loading="lazy"></div>
                 <div class="card__description">
                     <span>Derecho Civil</span>
                     <p>Ofrecemos servicios de Derecho Civil, contratos, propiedad, familia y herencias brindando soporte legal para reclamar derechos y compensaciones.</p>
-                    <a href="#" class="btn__primary secondary">Ver mas</a>
+                    <a href="./pages/servicios-civil.html" class="btn__primary secondary" aria-label="Más información sobre el servicio de Derecho Civil">Ver mas</a>
                 </div>
             </div>
 
             <div class="services__card">
-                <div class="card__img"><img src="/public/images/services/derecho-laboral.webp" alt=""></div>
+                <div class="card__img"><img src="/public/images/services/derecho-laboral.webp" alt="servicio derecho laboral" loading="lazy"></div>
                 <div class="card__description">
-                    <span>Derecho laboral</span>
+                    <span>Derecho Laboral</span>
                     <p>Defensa en Derecho Laboral, asesorando en contratos, despidos, salarios y derechos de los empleados, para garantizar un entorno laboral justo y proteger tus intereses.</p>
-                    <a href="#" class="btn__primary secondary">Ver mas</a>
+                    <a href="./pages/servicios-laboral.html" class="btn__primary secondary" aria-label="Más información sobre el servicio de Derecho laboral">Ver mas</a>
                 </div>
             </div>
 
             <div class="services__card">
-                <div class="card__img"><img src="/public/images/services/derecho-penal.webp" alt=""></div>
+                <div class="card__img"><img src="/public/images/services/derecho-penal.webp" alt="servicio derecho penal" loading="lazy"></div>
                 <div class="card__description">
                     <span>Derecho Penal</span>
                     <p>Derecho Penal, abarcando delitos contra la propiedad, violencia, narcotráfico y fraude. Ofrecemos defensa en juicios y apelaciones, protegiendo siempre los derechos del acusado.</p>
-                    <a href="#" class="btn__primary secondary">Ver mas</a>
+                    <a href="./pages/servicios-penal.html" class="btn__primary secondary" aria-label="Más información sobre el servicio de Derecho Penal">Ver mas</a>
                 </div>
             </div>
             <div class="services__card">
-                <div class="card__img"><img src="/public/images/services/derecho-familia.webp" alt=""></div>
+                <div class="card__img"><img src="/public/images/services/derecho-familia.webp" alt="servicio derecho de familia" loading="lazy"></div>
                 <div class="card__description">
                     <span>Derecho de Familia</span>
                     <p>Derecho de Familia,  abarcando divorcios, custodia, pensión alimenticia y adopción. Brindamos asesoramiento legal para proteger los derechos en conflictos familiares.</p>
-                    <a href="#" class="btn__primary secondary">Ver mas</a>
+                    <a href="./pages/servicios-familia.html" class="btn__primary secondary" aria-label="Más información sobre el servicio de Derecho de Familia">Ver mas</a>
                 </div>
             </div>
         </div>
@@ -127,19 +133,19 @@
         <div class="about__flex">
             <h3>Defensores de tus Derechos</h3>
             <p>En el Estudio Jurídico González, te asesoramos juridicamente en cualquier disputa en contra de tus derechos . Nos especializamos en proteger tus intereses y garantizar que recibas el respaldo jurídico que necesitas en cada etapa del proceso.</p>
-            <a href="#" class="btn__primary secondary">Nosotros</a>
+            <a href="./pages/nosotros.html" class="btn__primary secondary">Nosotros</a>
         </div>
         <div class="about__grid">
             <div class="about__box">
-                <span class="about__number">90%</span>
+                <span class="about__number" aria-label="90 por ciento de casos ganados">90%</span>
                 <p>Casos Ganados</p>
             </div>
             <div class="about__box">
-                <span class="about__number">+10</span>
+                <span class="about__number" aria-label="Más de 10 años de trayectoria">+10</span>
                 <p>Años de Trayectoria</p>
             </div>
             <div class="about__box">
-                <span class="about__number">+300</span>
+                <span class="about__number" aria-label="Más de 300 clientes protegidos">+300</span>
                 <p>Clientes Protegidos</p>
             </div>
         </div>
@@ -163,7 +169,7 @@
         <div class="value__grid">
             <div class="value__box">
                 <div class="icon__box">
-                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star" aria-label="Experiencia legal"></i>
                 </div>
                 <div class="value__text">
                     <h5>Experiencia</h5>
@@ -172,7 +178,7 @@
             </div>
             <div class="value__box">
                 <div class="icon__box">
-                    <i class="fa-solid fa-handshake"></i>
+                    <i class="fa-solid fa-handshake" aria-label="Compromiso con nuestros clientes"></i>
                 </div>
                 <div class="value__text">
                     <h5>Compromiso</h5>
@@ -181,7 +187,7 @@
             </div>
             <div class="value__box">
                 <div class="icon__box">
-                    <i class="fa-solid fa-comments"></i>
+                    <i class="fa-solid fa-comments" aria-label="Transparencia en la comunicación"></i>
                 </div>
                 <div class="value__text">
                     <h5>Transparencia</h5>
@@ -201,7 +207,7 @@
         <div class="contact__grid">
             <div class="value__box">
                 <div class="icon__box">
-                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-phone" aria-label="Número de teléfono"></i>
                 </div>
                 <div class="value__text">
                     <h5>Teléfono</h5>
@@ -210,7 +216,7 @@
             </div>
             <div class="value__box">
                 <div class="icon__box">
-                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-envelope" aria-label="Correo electrónico"></i>
                 </div>
                 <div class="value__text">
                     <h5>Correo</h5>
@@ -219,7 +225,7 @@
             </div>
             <div class="value__box">
                 <div class="icon__box">
-                    <i class="fa-solid fa-location-dot"></i>
+                    <i class="fa-solid fa-location-dot" aria-label="Dirección de oficina"></i>
                 </div>
                 <div class="value__text">
                     <h5>Ubicación</h5>
@@ -234,53 +240,58 @@
 
 
     <footer class="footer" id="footer">
-            <div class="footer__logo">
-                <div class="logo"><a href=""><img src="/public/images/logo/logo-desktop.png" alt="imagen de fondo del hero" id="logo-desktop"></a></div>
-                <h5>Estudio jurídico <br> Gonzalez</h5>
+        <div class="footer__logo">
+            <div class="logo">
+                <a href="#"><img src="/public/images/logo/logo-desktop.png" alt="Logo Estudio Jurídico González" id="logo-desktop" loading="lazy"></a>
             </div>
-            <nav class="footer__nav">
+            <h5>Estudio Jurídico <br> González</h5>
+        </div>
+        <nav class="footer__nav">
             <ul class="nav__links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-        <div class="footer__info">
-            <div class="info__box">
-                <i class="fa-solid fa-location-dot"></i>
-                <a href="https://www.google.com/maps/search/?api=1&query=avenida+9+de+julio+1223,+Resistencia+Chaco,+Argentina" target="_blank" rel="noopener noreferrer">
-                    avenida 9 de julio 1223, Resistencia Chaco, Argentina
+            <div class="footer__info">
+                <div class="info__box" itemscope itemtype="http://schema.org/Place">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="https://www.google.com/maps/search/?api=1&query=avenida+9+de+julio+1223,+Resistencia+Chaco,+Argentina" target="_blank" rel="noopener noreferrer" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">Avenida 9 de Julio 1223</span>, 
+                        <span itemprop="addressLocality">Resistencia</span> 
+                        <span itemprop="addressRegion">Chaco</span>, 
+                        <span itemprop="addressCountry">Argentina</span>
+                    </a>
+                </div>
+                <div class="info__box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p><a href="mailto:gonzalezabogado@gmail.com" itemprop="email">gonzalezabogado@gmail.com</a></p>
+                </div>
+                <div class="info__box">
+                    <i class="fa-solid fa-phone"></i>
+                    <p><a href="tel:+543624124788" itemprop="telephone">+54 9 362 124788</a></p>
+                </div>
+                <div class="info__box">
+                    <i class="fa-regular fa-clock"></i>
+                    <p itemprop="openingHours" content="Mo-Fr 08:00-20:30, Sa 08:00-17:00">
+                        Lunes a viernes de 08:00 a 20:30. Sábados de 08:00 a 17:00.
+                    </p>
+                </div>
+            </div>
+            <div class="footer__social">
+                <a href="https://www.instagram.com/tuusuario" target="_blank" rel="noopener noreferrer" aria-label="Instagram Estudio Jurídico González">
+                    <i class="fa-brands fa-instagram"></i>
                 </a>
-                
+                <a href="https://wa.me/543624124788" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Estudio Jurídico González">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
             </div>
-            <div class="info__box">
-                <i class="fa-solid fa-envelope"></i>
-                <p>gonzalezabogado@gmail.com</p>
-            </div>
-            <div class="info__box">
-                <i class="fa-solid fa-phone"></i>
-                <p>+54 9 362 124788</p>
-            </div>
-            <div class="info__box">
-                <i class="fa-regular fa-clock"></i>
-                <p>
-                    Lunes a viernes de 08:00 a 20:30.
-                    Sabados de 08:00 a 17:00.
-                </p>
-            </div>
-        </div>
-        <div class="footer__social">
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-    </nav>
-        <!-- <div class="footer__copyright">
-            <p>
-                @ Estudio Juridico Gonzalez. <br>
-                Todos los derechos reservados
-            </p>
-        </div> -->
+        </nav>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    
     
     <script src="https://kit.fontawesome.com/589ccb3687.js" crossorigin="anonymous"></script>
     <script src="script/script.js"></script>
