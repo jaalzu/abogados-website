@@ -56,14 +56,30 @@
     .navbar-nav .dropdown.show .dropdown-menu {
         display: block !important;
     }
+
+    /* Navbar fijo solo en móviles */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        width: 100%;
+    }
+
+    /* Evitar que el contenido de la página quede oculto detrás del navbar fijo */
+    body {
+        padding-top: 80px; /* Ajusta este valor dependiendo de la altura de tu navbar */
+    }
 }
 
 /* Escritorio: ajustes */
 @media (min-width: 992px) {
-
-    .navbar{
+    .navbar {
+        position: relative !important; /* Eliminar el fixed-top en desktop */
         background-color: transparent;
     }
+
     .navbar-nav .dropdown:hover .dropdown-menu {
         display: block; /* Mostrar el dropdown al pasar el mouse */
     }

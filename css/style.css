@@ -154,10 +154,24 @@ h2 {
   .navbar-nav .dropdown.show .dropdown-menu {
     display: block !important;
   }
+  /* Navbar fijo solo en móviles */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+  }
+  /* Evitar que el contenido de la página quede oculto detrás del navbar fijo */
+  body {
+    padding-top: 80px; /* Ajusta este valor dependiendo de la altura de tu navbar */
+  }
 }
 /* Escritorio: ajustes */
 @media (min-width: 992px) {
   .navbar {
+    position: relative !important; /* Eliminar el fixed-top en desktop */
     background-color: transparent;
   }
   .navbar-nav .dropdown:hover .dropdown-menu {
@@ -180,7 +194,7 @@ h2 {
 }
 header {
   width: 100%;
-  height: 87vh;
+  height: 77vh;
   background-image: url(/public/images/hero\ images/hero.webp);
   background-position: 35%;
   background-size: cover;
@@ -198,13 +212,18 @@ header::before {
   z-index: 1;
 }
 
+@media (min-width: 1025px) {
+  header {
+    height: 87vh;
+  }
+}
 .hero {
   z-index: 2;
   position: relative;
   color: #FAFAFA;
   text-align: center;
   padding-inline: 7px;
-  padding-top: 15rem;
+  padding-top: 10rem;
   letter-spacing: 0.5px;
 }
 .hero h1 {
@@ -228,10 +247,10 @@ header::before {
 }
 @media (min-width: 1025px) {
   .hero h1 {
-    font-size: 2.2875rem;
+    font-size: 3.5875rem;
   }
   .hero span {
-    font-size: 1rem;
+    font-size: 1.325rem;
   }
 }
 .header__pages {
@@ -365,9 +384,6 @@ header::before {
 @media (min-width: 668px) and (max-width: 1024px) {
   #footer .footer__logo {
     margin-bottom: 3.5rem;
-  }
-  #footer .footer__nav {
-    text-align: center;
   }
   #footer .footer__nav .nav__links::after {
     right: 50%;
