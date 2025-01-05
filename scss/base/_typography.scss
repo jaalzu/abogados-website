@@ -13,7 +13,6 @@ a{
 }
 
 p{
-    // @include font-style($font-size-base,$black-color,$font-weight-regular);
     font-size: clamp(1.130rem,5vw,1.230rem);
     line-height:1.4;
 }
