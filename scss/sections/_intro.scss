@@ -2,17 +2,19 @@
     width: 100%;
     background-color: $white-color;
     height: auto;
+    
     .intro__box{
         margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 4.5rem;
     align-items: flex-start;
+
         .intro__title {
 
             
             h2{
-                line-height: 1.3;
+                font-weight: 600;
                 position: relative;
 
                 
@@ -32,6 +34,8 @@
             p{
                 padding-right: .9rem;
                 position: relative;
+                line-height: 1.5;
+                
                 .markup__intro{
                     @include font-style(25px,$primary-color,$font-weight-regular);
                     &:nth-child(1){

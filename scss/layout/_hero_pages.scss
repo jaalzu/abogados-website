@@ -24,3 +24,10 @@
         margin-top: 5rem;
     }
 }
+
+
+@include respond-to(desktop){
+    .header__pages{
+        height: 80vh;
+    }
+}

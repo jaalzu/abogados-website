@@ -172,11 +172,9 @@
     background-color: $secondary-color;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding-inline: $padding-inline-mobile;
     gap: 2rem;
     padding-top: 3rem;    
-
     
 
     .services__intro{
@@ -184,7 +182,7 @@
         position: relative;
         
         h2{
-            @include font-style(24px,$white-color,$font-weight-regular);
+            @include font-style(27px !important,$white-color,$font-weight-regular);
             font-family: $font-family-secondary;
             line-height: 1.5 !important;
         }
@@ -204,6 +202,7 @@
         padding-bottom: 3rem;
         span{
             font-size: 1.4rem;
+
             color:$white-color;
             font-weight: $font-weight-medium;
             opacity: .9;
@@ -212,8 +211,9 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+
             gap: 1.2rem;
-            margin-top: 3rem;
+            margin-top: 2rem;
             li{
                 display: flex;
                 align-items: center;
@@ -234,11 +234,10 @@
         }
     }
 
-
         .services__img{
-            img{
-                max-width: 90%;
-            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 }
 
