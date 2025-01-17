@@ -3,9 +3,9 @@
         position: relative;
         color: $white-color;
         text-align: center;
-        padding-inline: 7px;
-        padding-top: 10rem;
+        padding-top: 9rem;
         letter-spacing: .5px;
+        padding-inline: 5px;
 
         h1{
             @include font-style($font-size-h1,$white-color,$font-weight-semibold);
