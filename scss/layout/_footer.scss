@@ -28,8 +28,14 @@
                 gap: 2rem;
                 margin-bottom: 7rem;
                 position: relative;
+
                 li a{
                     @include font-style(27px,$white-color,$font-weight-regular);
+                    transition: .2s ease;
+
+                    &:hover{
+                        color:$primary-color;
+                    }
                 }
 
                 &::after{
@@ -74,8 +80,9 @@
                         color: $white-color;
                     }
                 }
-
             }
+
+
             .footer__social{
                 display: flex;
                 gap: 3.2rem;
@@ -189,182 +196,3 @@
 
 
 
-
-
-// #footer{
-//     background-color: $secondary-color;
-//     display: grid;
-//     flex-direction: column;
-//     grid-template-columns: 1fr;
-
-//     padding-inline: $padding-inline-mobile;
-//     height: auto;
-//     .footer__logo{
-//         padding-top: 3rem;
-//         padding-bottom: 3rem;
-//         text-align: center;
-//         display: flex;
-//         flex-direction: column;
-//         gap: .7rem;
-
-//         .logo{
-//             display: flex;
-//             justify-content: center;
-//         }
-
-//         h5{
-//             color: $white-color;
-//             font-size: clamp(1.3rem,5vw,1.6rem);
-//             font-weight: $font-weight-regular;
-//         }
-//     }
-
-//     .footer__nav{
-//         nav{
-//             display: flex;
-//             flex-direction: column;
-//             align-items: flex-start;
-//             gap: 2.5rem;
-//             margin-bottom: 5rem;
-//             position: relative;
-
-//             li a {
-//                 @include font-style(27px,$white-color,$font-weight-regular)
-//             }
-            
-//             &::after{
-//                 content: '';
-//                 position: absolute;
-//                 width: 70%;
-//                 height: 1px;
-//                 background-color: $primary-color;
-//                 bottom: -18%;
-//                 left: 0%;
-                
-//             }
-//         }
-//     }
-
-//     .footer__info{
-//         display: flex;
-//         margin-top: 1.5rem;
-//         flex-direction: column;
-//         align-items: flex-start;
-//         gap: 2.5rem;
-//         .info__box{
-//             display: flex;
-//             gap: 1.5rem;
-//             align-items: center;
-            
-//             i{
-//                 color: $primary-color;
-//                 font-size: 1.2rem;
-//             }
-
-//             p{
-//                 @include font-style(1.020rem,$white-color,$font-weight-regular)
-//             }
-//         }
-//     }
-
-//     .footer__social{
-//         padding-block:4.5rem;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         gap: 3rem;
-          
-//            i{
-//             font-size: 2.5rem;
-//             color: $white-color;
-//             transition: .2s ease;
-
-//             &:hover{
-//                 color: $primary-color;
-//             }
-//            }
-//     }
-
-//     .footer__copyright{
-//         border-top:1px solid $grey-color ;
-//         padding-top: 1rem;
-//         padding-bottom: 1rem;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         color: $white-color;
-//             p{
-//                 font-size: .950rem;
-//             }
-//     }
-// }
-
-
-// @include respond-to(tablet){
-//     #footer{
-//         .footer__nav{
-//             nav{
-//                 align-items: center;
-
-//                 &::after{
-//                     right: 50%;
-//                     left: 50%;
-//                     width: 90%;
-//                     transform: translate(-50%,-50%);
-//                 }
-//             }
-//         }
-
-//         .footer__info{
-//             align-items: center;
-//         }
-//     }
-// }
-
-
-
-// @include respond-to(desktop){
-//     #footer{
-//         grid-template-columns: repeat(4,1fr);
-//         gap: 3rem;
-//         padding-top: 5rem;
-
-//         .footer__logo{
-//             padding-top: 0;
-//             padding-bottom: 0;
-//             gap: 1rem;
-//         }
-
-//         .footer__nav{
-//             nav{
-//                 gap: 3.5rem;
-
-//                 li a {
-//                     font-size: 24px;
-//                 }
-
-//                 &::after{
-//                     height: 0;
-//                 }
-//             }
-//         }
-
-//         .footer__info{
-//             margin-top: 0;
-//             padding-right: 1rem;
-
-//             .info__box{
-//                 gap: 2rem;
-//             }
-//         }
-
-//         .footer__social{
-//             flex-direction: column;
-//             padding-block: 0;
-//         }
-
-//         .footer__copyright{
-
-//         }
-//     }   
-// }

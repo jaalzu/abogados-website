@@ -109,16 +109,14 @@
 @include respond-to(desktop){
     #services{
         .services__flex{
-
             width: 100%;
             max-width: 1300px;
             margin: 0 auto;
             .services__intro{
-                gap: 5rem;
+                gap: 3rem;
                 flex-direction: row;
                 .services__img{
                     img{
-                        
                         width: 400px;
                         height: 500px;
                 }
@@ -135,7 +133,7 @@
     .services__grid{
         max-width: 1300px;
         margin: 0 auto;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));    }
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));}
     }
 }
 

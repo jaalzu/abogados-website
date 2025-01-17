@@ -99,7 +99,6 @@ h2 {
   border-radius: 4px;
 }
 
-/* Estilos generales */
 .navbar {
   background-color: #272d39;
 }
@@ -109,9 +108,8 @@ h2 {
   height: 40px;
 }
 
-/* Logo más pequeño */
 .navbar-brand img {
-  max-width: 65px; /* Tamaño del logo */
+  max-width: 65px;
   height: auto;
 }
 
@@ -122,31 +120,30 @@ h2 {
 }
 
 .navbar-nav .nav-link:hover {
-  background-color: #3a4454;
+  background-color: #F1B164;
   color: #FAFAFA;
 }
 
-/* Estilos para el dropdown */
 .navbar-nav .dropdown-menu {
-  background-color: #272d39; /* Fondo del dropdown */
+  background-color: #272d39;
   border: none;
 }
 
 .navbar-nav .dropdown-menu .dropdown-item {
   color: #FAFAFA;
   font-size: 1.1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.3rem;
 }
 
 .navbar-nav .dropdown-menu .dropdown-item:hover {
-  background-color: #3a4454;
+  background-color: #F1B164;
 }
 
 /* Móvil: ajustes */
 @media (max-width: 991.98px) {
   .navbar-nav .nav-link {
-    font-size: 1.2rem; /* Tamaño de los links */
-    padding: 1rem 2rem; /* Más espacio entre los links */
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
   }
   .navbar-nav .dropdown-menu {
     background-color: #272d39; /* Color del fondo del dropdown */
@@ -164,19 +161,18 @@ h2 {
     z-index: 9999;
     width: 100%;
   }
-  /* Evitar que el contenido de la página quede oculto detrás del navbar fijo */
   body {
-    padding-top: 80px; /* Ajusta este valor dependiendo de la altura de tu navbar */
+    padding-top: 80px;
   }
 }
-/* Escritorio: ajustes */
 @media (min-width: 992px) {
   .navbar {
-    position: relative !important; /* Eliminar el fixed-top en desktop */
+    position: relative !important;
     background-color: transparent;
+    border-bottom: 1px solid #504C47;
   }
   .navbar-nav .dropdown:hover .dropdown-menu {
-    display: block; /* Mostrar el dropdown al pasar el mouse */
+    display: block;
   }
   .navbar-nav .nav-link {
     font-size: 1.3rem;
@@ -190,7 +186,7 @@ h2 {
     right: 0;
   }
   .navbar-nav .dropdown-menu .dropdown-item {
-    padding: 1rem 0.5rem; /* Ajustar el tamaño de los elementos del dropdown */
+    padding: 1rem 0.5rem;
   }
 }
 header {
@@ -243,12 +239,12 @@ header::before {
 
 @media (min-width: 668px) and (max-width: 1024px) {
   .hero h1 {
-    font-size: 3.48125rem;
+    font-size: 3.88125rem;
   }
 }
 @media (min-width: 1025px) {
   .hero h1 {
-    font-size: 4.8875rem;
+    font-size: 5.1375rem;
   }
   .hero span {
     font-size: 1.325rem;
@@ -319,6 +315,10 @@ header::before {
   font-size: 27px;
   color: #FAFAFA;
   font-weight: 400;
+  transition: 0.2s ease;
+}
+#footer .footer__nav .nav__links li a:hover {
+  color: #F1B164;
 }
 #footer .footer__nav .nav__links::after {
   content: "";
@@ -578,7 +578,7 @@ header::before {
     margin: 0 auto;
   }
   #services .services__flex .services__intro {
-    gap: 5rem;
+    gap: 3rem;
     flex-direction: row;
   }
   #services .services__flex .services__intro .services__img img {
