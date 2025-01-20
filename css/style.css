@@ -13,6 +13,10 @@
   list-style: none;
 }
 
+body {
+  position: relative;
+}
+
 section {
   padding: 25px 4% 70px;
   height: auto;
@@ -78,7 +82,7 @@ h2 {
   outline: none;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 14rem;
   height: 2.55rem;
   border-radius: 2px;
@@ -97,6 +101,13 @@ h2 {
 .btn__primary.secondary {
   width: 8.5rem;
   border-radius: 4px;
+}
+
+.whatsapp__link {
+  position: fixed;
+  bottom: 2%;
+  right: 3.5%;
+  z-index: 100;
 }
 
 .navbar {
