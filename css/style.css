@@ -444,10 +444,10 @@ header::before {
     font-size: 1rem;
   }
   #footer .footer__nav .footer__info .info__box a {
-    font-size: 0.9rem;
+    font-size: 0.93rem;
   }
   #footer .footer__nav .footer__info .info__box p {
-    font-size: 0.9rem;
+    font-size: 0.93rem;
   }
   #footer .footer__social {
     flex-direction: column;
@@ -500,6 +500,9 @@ header::before {
   .intro .intro__box {
     flex-direction: row;
     gap: 5rem;
+  }
+  .intro .intro__box .intro__description {
+    width: 100%;
   }
 }
 @media (min-width: 1440px) {

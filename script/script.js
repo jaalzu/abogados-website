@@ -35,15 +35,17 @@ ScrollReveal().reveal('.nosotros__description',{delay:500,origin:'left',distance
 ScrollReveal().reveal('.nosotros__img',{delay:500,origin:'right',distance: '10px',interval:200});
 
 
-ScrollReveal().reveal('.lawyer__description',{delay:500,origin:'right',distance: '15px',interval:200});
-ScrollReveal().reveal('.lawyer__img',{delay:500,origin:'left',distance: '15px',interval:200});
+ScrollReveal().reveal('.lawyer__description',{delay:800,origin:'right',distance: '15px',interval:200});
+ScrollReveal().reveal('.lawyer__img',{delay:800,origin:'left',distance: '15px',interval:200});
 
 // scroll reveal for nosotros page end //
 
 
-// scroll reveal for servicios civil page start //
+
+
+// scroll reveal for servicios  page start //
 
 ScrollReveal().reveal('.services__intro',{delay:500,origin:'left',distance: '15px',interval:200});
 ScrollReveal().reveal('.services__list',{delay:900,origin:'right',distance: '15px',interval:200});
 
-// scroll reveal for servicios civil page start //
+// scroll reveal for servicios  page end //
