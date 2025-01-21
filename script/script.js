@@ -39,3 +39,11 @@ ScrollReveal().reveal('.lawyer__description',{delay:500,origin:'right',distance:
 ScrollReveal().reveal('.lawyer__img',{delay:500,origin:'left',distance: '15px',interval:200});
 
 // scroll reveal for nosotros page end //
+
+
+// scroll reveal for servicios civil page start //
+
+ScrollReveal().reveal('.services__intro',{delay:500,origin:'left',distance: '15px',interval:200});
+ScrollReveal().reveal('.services__list',{delay:900,origin:'right',distance: '15px',interval:200});
+
+// scroll reveal for servicios civil page start //
