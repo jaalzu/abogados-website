@@ -353,10 +353,9 @@ header::before {
   align-items: center;
   justify-content: center;
 }
-#footer .footer__nav .footer__info .info__box i {
-  color: #FAFAFA;
-  opacity: 0.7;
-  font-size: 1.3rem;
+#footer .footer__nav .footer__info .info__box img {
+  width: auto;
+  height: 30px;
 }
 #footer .footer__nav .footer__info .info__box a {
   font-size: 1rem;
@@ -376,13 +375,12 @@ header::before {
   justify-content: center;
   margin-bottom: 3rem;
 }
-#footer .footer__nav .footer__social i {
-  color: #FAFAFA;
-  font-size: 2.5rem;
-  transition: 0.2s ease-in;
+#footer .footer__nav .footer__social img {
+  width: 35px;
+  transition: 0.2s ease;
 }
-#footer .footer__nav .footer__social i:hover {
-  color: #F1B164;
+#footer .footer__nav .footer__social img:hover {
+  transform: translateY(-10px);
 }
 #footer .footer__copyright {
   position: static;
@@ -439,9 +437,6 @@ header::before {
     gap: 3rem;
     padding-right: 3rem;
     border-right: 1px solid #F1B164;
-  }
-  #footer .footer__nav .footer__info .info__box i {
-    font-size: 1rem;
   }
   #footer .footer__nav .footer__info .info__box a {
     font-size: 0.93rem;
@@ -852,17 +847,17 @@ header::before {
 }
 .value .value__grid .value__box .icon__box {
   background-color: #F1B164;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 61px;
-  padding: 1rem;
-  border-radius: 50%;
+  width: 80px;
+  height: 50px;
+  padding: 0.7rem;
+  border-radius: 30%;
 }
-.value .value__grid .value__box .icon__box i {
-  color: #000000;
-  font-size: 1.8rem;
+.value .value__grid .value__box .icon__box img {
+  width: 28px;
+  height: 25px;
 }
 .value .value__grid .value__box .value__text {
   display: flex;
@@ -874,6 +869,11 @@ header::before {
   font-weight: 400;
 }
 
+@media (min-width: 668px) and (max-width: 1024px) {
+  .value .value__grid .value__box .icon__box {
+    width: 60px;
+  }
+}
 @media (min-width: 1025px) {
   .value .value__flex p {
     text-align: center;
@@ -942,14 +942,14 @@ header::before {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 61px;
-  padding: 1rem;
-  border-radius: 50%;
+  width: 70px;
+  height: 60px;
+  padding: 2rem;
+  border-radius: 30%;
 }
-.contact .contact__grid .value__box .icon__box i {
-  color: #000000;
-  font-size: 1.8rem;
+.contact .contact__grid .value__box .icon__box img {
+  width: 30px;
+  height: 27px;
 }
 .contact .contact__grid .value__box .value__text {
   display: flex;
@@ -1125,11 +1125,8 @@ header::before {
 .contact__page .contact__page__grid .contact__box .contact__icon {
   padding-bottom: 0.5rem;
 }
-.contact__page .contact__page__grid .contact__box .contact__icon i {
-  padding: 1.2rem;
-  font-size: 1.6rem;
-  border-radius: 50%;
-  background-color: #F1B164;
+.contact__page .contact__page__grid .contact__box .contact__icon img {
+  width: 35px;
 }
 .contact__page .contact__page__grid .contact__box span {
   font-size: 1rem;

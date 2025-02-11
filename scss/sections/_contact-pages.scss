@@ -26,13 +26,10 @@
             padding-top: 2rem;
             .contact__icon{
                     padding-bottom: .5rem;
-                    
-                i{
-                    padding: 1.2rem;
-                    font-size: 1.6rem;
-                    border-radius: 50%;
-                    background-color: $primary-color;
-                }
+
+                    img{
+                        width: 35px;
+                    }
             }
                 span{
                     font-size: 1rem;

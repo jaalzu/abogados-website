@@ -61,12 +61,12 @@
                     gap: 1.8rem;
                     align-items: center;
                     justify-content: center;
+                        img{
+                            width: auto;
+                            height: 30px;
+                        }
 
-                    i{
-                        color: $white-color;
-                        opacity: .7;
-                        font-size: 1.3rem;
-                    }
+                    
                     a{
                         font-size: 1rem;
                         color: $white-color;
@@ -90,12 +90,11 @@
                 justify-content: center;
                 margin-bottom: 3rem;
 
-                i{
-                    color: $white-color;
-                    font-size: 2.5rem;
-                    transition: .2s ease-in;
+                img{
+                    width: 35px;
+                    transition: .2s ease;
                     &:hover{
-                        color: $primary-color;
+                        transform: translateY(-10px);
                     }
                 }
             }
@@ -173,9 +172,8 @@
                 padding-right: 3rem;
                 border-right: 1px solid $primary-color;
                 .info__box{
-                    i{
-                        font-size: 1rem;
-                    }
+                   
+                    
 
                     a{
                         font-size: .930rem;
