@@ -660,9 +660,9 @@ header::before {
   gap: 1rem;
   color: #FAFAFA;
 }
-.services__info .services__list ul li i {
-  color: #F1B164;
-  font-size: 0.5rem;
+.services__info .services__list ul li img {
+  width: 20px;
+  margin-right: 0.5rem;
 }
 .services__info .services__list ul li p {
   font-size: 1.3rem;
